@@ -10,4 +10,3 @@ graphviz
 dtreeviz
 opencv-python
 ultralytics
-pickle
