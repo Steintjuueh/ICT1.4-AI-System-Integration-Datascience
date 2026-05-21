@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<scored_by &le; 94980.5<br/>entropy = 1.757<br/>samples = 207<br/>value = [77.0, 6.0, 37.0, 10.0, 4.0, 193.0, 8.0]<br/>class = Special>, fillcolor="#dca6f3"] ;
+1 [label=<scored_by &le; 15151.5<br/>entropy = 2.32<br/>samples = 80<br/>value = [37, 6, 29, 10, 2, 41, 7]<br/>class = Special>, fillcolor="#fcf7fe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<scored_by &le; 1532.0<br/>entropy = 1.694<br/>samples = 21<br/>value = [14, 4, 16, 0, 0, 3, 0]<br/>class = ONA>, fillcolor="#eefdf0"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 0, 6, 0, 0, 0, 0]<br/>class = ONA>, fillcolor="#39e54d"] ;
+2 -> 3 ;
+4 [label=<entropy = 1.752<br/>samples = 19<br/>value = [14, 4, 10, 0, 0, 3, 0]<br/>class = Movie>, fillcolor="#fae7d9"] ;
+2 -> 4 ;
+5 [label=<episodes &le; 2.5<br/>entropy = 2.27<br/>samples = 59<br/>value = [23.0, 2.0, 13.0, 10.0, 2.0, 38.0, 7.0]<br/>class = Special>, fillcolor="#efd6fa"] ;
+1 -> 5 ;
+6 [label=<entropy = 1.567<br/>samples = 24<br/>value = [23, 2, 0, 2, 2, 0, 7]<br/>class = Movie>, fillcolor="#f1b992"] ;
+5 -> 6 ;
+7 [label=<entropy = 1.28<br/>samples = 35<br/>value = [0, 0, 13, 8, 0, 38, 0]<br/>class = Special>, fillcolor="#d593f1"] ;
+5 -> 7 ;
+8 [label=<episodes &le; 3.5<br/>entropy = 1.062<br/>samples = 127<br/>value = [40, 0, 8, 0, 2, 152, 1]<br/>class = Special>, fillcolor="#c977ed"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<year &le; 998.0<br/>entropy = 0.576<br/>samples = 28<br/>value = [40, 0, 0, 0, 2, 1, 1]<br/>class = Movie>, fillcolor="#e78d4c"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.429<br/>samples = 27<br/>value = [40, 0, 0, 0, 2, 0, 1]<br/>class = Movie>, fillcolor="#e78a47"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 0, 1, 0]<br/>class = Special>, fillcolor="#b139e5"] ;
+9 -> 11 ;
+12 [label=<episodes &le; 11.5<br/>entropy = 0.288<br/>samples = 99<br/>value = [0, 0, 8, 0, 0, 151, 0]<br/>class = Special>, fillcolor="#b543e6"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.89<br/>samples = 13<br/>value = [0, 0, 8, 0, 0, 18, 0]<br/>class = Special>, fillcolor="#d491f1"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.0<br/>samples = 86<br/>value = [0, 0, 0, 0, 0, 133, 0]<br/>class = Special>, fillcolor="#b139e5"] ;
+12 -> 14 ;
+}

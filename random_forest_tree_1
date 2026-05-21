@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<year &le; 989.5<br/>entropy = 1.782<br/>samples = 213<br/>value = [104, 4, 31, 10, 7, 173, 6]<br/>class = Special>, fillcolor="#e8c4f7"] ;
+1 [label=<scored_by &le; 6682.5<br/>entropy = 1.619<br/>samples = 95<br/>value = [104, 4, 31, 10, 7, 0, 6]<br/>class = Movie>, fillcolor="#f1b991"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<scored_by &le; 2235.0<br/>entropy = 0.986<br/>samples = 13<br/>value = [2, 2, 14, 0, 0, 0, 0]<br/>class = ONA>, fillcolor="#6aec79"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.224<br/>samples = 6<br/>value = [1, 2, 6, 0, 0, 0, 0]<br/>class = ONA>, fillcolor="#8ef099"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.503<br/>samples = 7<br/>value = [1, 0, 8, 0, 0, 0, 0]<br/>class = ONA>, fillcolor="#52e863"] ;
+2 -> 4 ;
+5 [label=<episodes &le; 1.5<br/>entropy = 1.472<br/>samples = 82<br/>value = [102, 2, 17, 10, 7, 0, 6]<br/>class = Movie>, fillcolor="#eeab7a"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.644<br/>samples = 62<br/>value = [100, 2, 2, 1, 2, 0, 3]<br/>class = Movie>, fillcolor="#e78d4c"] ;
+5 -> 6 ;
+7 [label=<entropy = 1.985<br/>samples = 20<br/>value = [2, 0, 15, 9, 5, 0, 3]<br/>class = ONA>, fillcolor="#cff9d4"] ;
+5 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 118<br/>value = [0, 0, 0, 0, 0, 173, 0]<br/>class = Special>, fillcolor="#b139e5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
